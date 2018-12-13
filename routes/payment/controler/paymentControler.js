@@ -1,7 +1,7 @@
 let Promise = require('bluebird');
 let _ = require('underscore');
 let lodash = require('lodash');
-let notificationrServices = require('../services/notificationService');
+let paymentService = require('../services/paymentService');
 
 
 exports.sendBulkNotification                  =            sendBulkNotification;

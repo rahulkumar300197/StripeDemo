@@ -1,5 +1,5 @@
 var express = require('express');
-var notificationControler = require('./controler/notificationControler');
+var paymentControler = require('./controler/paymentControler');
 var router = express.Router();
 
 /* GET notifications listing. */

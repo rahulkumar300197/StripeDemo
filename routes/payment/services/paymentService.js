@@ -1,9 +1,11 @@
 var Promise         = require('bluebird');
 var dbHandler       = require('../../../database/mysqlLib');
 var envProperties   = require('../../../properties/envProperties');
-var FCM             = require('fcm-push');             
+var stripePrivate   = require('stripe')('');
+var stripePublic    = require('stripe')('');
 
-exports.getDeviceToken          =          getDeviceToken;
+
+exports.addCard                 =          addCard;
 exports.getDeviceTokenCount     =          getDeviceTokenCount;
 exports.sendNotification        =          sendNotification;
 
